@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/play_arrow"
+        style="@style/GeneralMargin"
+        android:background="@drawable/ic_arrow"
+        android:onClick="playTrailer"/>
+
+    <TextView
+        android:id="@+id/trailer_text"
+        style="@style/WrapContentLayout"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/play_arrow">
+    </TextView>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/ViewDividerStyle"
+        android:layout_below="@+id/play_arrow" />
+</RelativeLayout>

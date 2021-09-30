@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/nav_host_fragment_container"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph"
+            tools:layout="@layout/fragment_movies">
+        </fragment>
+
+    </LinearLayout>
+</layout><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".MainActivity">-->
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/movies"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:layout_editor_absoluteX="1dp"-->
+    <!--        tools:layout_editor_absoluteY="1dp" />-->
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/pb_loading_indicator"-->
+    <!--        android:layout_height="@dimen/progress_bar_layout"-->
+    <!--        android:layout_width="@dimen/progress_bar_layout"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:visibility="invisible" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/error_message_display"-->
+    <!--        style="@style/WrapContentLayout"-->
+    <!--        android:padding="@dimen/error_message_padding"-->
+    <!--        android:text="@string/error_message"-->
+    <!--        android:textSize="@dimen/error_message_text_size"-->
+    <!--        android:visibility="invisible" />-->
+    <!--</FrameLayout>-->
